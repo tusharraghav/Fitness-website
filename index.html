@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5  CSS---->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!---Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Animation CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <title>Cure Fitness</title>
+</head>
+<body>
+    <!-- Navigation Section Code -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <!-- Brand Logo---->
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="text-primary">Cure</span><span class="text-dark">Fit</span>
+            </a>
+
+            <!---Mobile Toggle Button----->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!---Dark/Light Mode Toggle (Mobile Visible) -->
+            <div class="d-lg-none ms-auto me-3">
+                <button class="btn btn-sm p-1" id="colorModeToggleMobile" title="Toggle dark/light mode">
+                    <i class="fas fa-moon fs-5"></i>
+                </button>
+            </div>
+             
+            <!--Navigation Content --->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#plans">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#review">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary rounded-pill px-4" href="#join">Join Now <i class="fas fa-arrow-right ms-2"></i></a>
+                    </li>
+
+                    <!---Dark/Light Mode Toggle (Desktop Visible)--->
+                    <li class="nav-item ms-lg-3 d-none d-lg-block">
+                        <button class="btn btn-sm p-1" id="colorModeToggle" title="Toggle dark/light mode">
+                            <i class="fas fa-moon fs-5"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    
+    <!--Hero Section Code-->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="hero-content animate__animated animate__fadeInLeft">
+                        <h3 class="hero-subtitle">Build Your</h3>
+                        <h1 class="hero-title">Dream <span>Physique</span></h1>
+                        <h3 class="hero-tagline">Transform with <span class="typed-text">Bodybuilding</span></h3>
+                        <a href="#join" class="hero-btn btn">Join Us Today <i class="fas fa-arrow-right ms-2"></i></a>
+
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">5000+</div>
+                                <div class="stat-label">Members</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">98%</div>
+                                <div class="stat-label">Satisfaction</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+
+                    <!-- This space can be used for an image or left empty for the background -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---About Section-->
+    <section class="about-section" id="about">
+        <div class="shape-decoration shape-1"></div>
+        <div class="shape-decoration shape-2"></div>
+        <div class="container">
+            <h2 class="section-heading">About <span>Our Gym</span></h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-img">
+                        <img src="Assests/gym_background.jpg" alt="About Image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="about-box">
+                        <h3 class="box-heading">Why Choose Us?</h3>
+                        <ol>
+                            <li>State-of-the-Art Equipment</li>
+                            <li>Expert Trainers</li>
+                            <li>Variety of Workouts</li>
+                            <li>Affordable Membership Plans</li>
+                            <li>24/7 Access</li>
+                            <li>Hygienic & Safe Environment</li>
+                            <li>Supportive Community</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="about-box">
+                        <h3 class="box-heading">Gym's Story</h3>
+                        <ol>
+                            <li>At CureFit Gym, we believe that fitness is not just about lifting weights or running miles—it's about building a lifestyle that fuels your body and mind</li>
+                            <li>Our journey began with a simple yet powerful vision: to create a fitness space where people of all ages and fitness levels feel empowered, motivated, and supported</li>
+                            <li>From humble beginnings, we have grown into a dynamic fitness hub, equipped with state-of-the-art facilities, expert trainers, and personalized workout plans</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="about-box">
+                        <h3 class="box-heading">Facilities</h3>
+                        <ol>
+                            <li><span class="facility-icon"><i class="fas fa-running"></i></span> Cardio area</li>
+                            <li><span class="facility-icon"><i class="fas fa-cogs"></i></span> Resistance machines</li>
+                            <li><span class="facility-icon"><i class="fas fa-dumbbell"></i></span> Free weights</li>
+                            <li><span class="facility-icon"><i class="fas fa-fire"></i></span> Functional training area</li>
+                            <li><span class="facility-icon"><i class="fas fa-swimming-pool"></i></span> Pool & sauna</li>
+                            <li><span class="facility-icon"><i class="fas fa-lock"></i></span> Locker room</li>
+                            <li><span class="facility-icon"><i class="fas fa-user-tie"></i></span> Personal training area</li>
+                            <li><span class="facility-icon"><i class="fas fa-users"></i></span> Group fitness studios</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- Services Section --->
+    <section class="services-section" id="services">
+        <div class="shape-decoration shape-1"></div>
+        <div class="shape-decoration shape-2"></div>
+        <div class="container">
+            <h2 class="section-heading">Our Gym <span>Services</span></h2>
+            <div class="row g-4">
+                <!-- Physical Fitness -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Physical Fitness">
+                        </div>
+                        <div class="service-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="service-body">
+                            <h4 class="service-title">Physical Fitness</h4>
+                            <p class="service-text">Build muscle, increase endurance, and boost strength with expert-led workouts tailored to your fitness level.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cardio Workout --->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Cardio Workout">
+                        </div>
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="service-body">
+                            <h4 class="service-title">Cardio Workout</h4>
+                            <p class="service-text">Burn calories and improve heart health with our high-intensity cardio sessions and cutting-edge equipment.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yoga & Meditation -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Yoga & Meditation">
+                        </div>
+                        <div class="service-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <div class="service-body">
+                            <h4 class="service-title">Yoga & Meditation</h4>
+                            <p class="service-text">Enhance flexibility, reduce stress, and improve mental health through guided yoga and meditation.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Training -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Personal Training">
+                        </div>
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="service-body">
+                            <h4 class="service-title">Personal Training</h4>
+                            <p class="service-text">One-on-one coaching with certified trainers completely tailored to your specific fitness goals.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!----Dance Class-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Dance Class">
+                        </div>
+                        <div class="service-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="service-body">
+                            <h4 class="service-title">Dance Class</h4>
+                            <p class="service-text">Fun, energetic dance workouts that burn calories while teaching you new moves and rhythms.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Nutrition Counseling---->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1453&q=80" alt="Nutrition Counseling">
+                        </div>
+                        <div class="service-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="service-body">
+                            <h4 class="service-title">Nutrition Counseling</h4>
+                            <p class="service-text">Personalized nutrition plans to complement your workouts and help you achieve optimal results.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---Plans Section Code--->
+    <section class="plans-section" id="plans">
+        <div class="shape-decoration shape-1"></div>
+        <div class="shape-decoration shape-2"></div>
+        <div class="container">
+            <h2 class="section-heading">Our <span>Plans</span></h2>
+
+            <div class="row g-4">
+                <!-- Basic Plan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="plan-card">
+                        <h3 class="plan-name mb-1">Basic</h3>
+                        <div class="plan-price mb-1">₹500<span>/month</span></div>
+                        <ul class="plan-features">
+                            <li>Smart Workout Plan</li>
+                            <li>Home Workout Plan</li>
+                            <li>Basic Gym Access</li>
+                            <li>Limited Equipment</li>
+                            <li>Email Support</li>
+                        </ul>
+                        <a href="#" class="plan-btn">Join Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Pro Plan (Popular) -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="plan-card popular">
+                        <div class="popular-badge">Popular</div>
+                        <h3 class="plan-name mb-1">Pro</h3>
+                        <div class="plan-price mb-1">₹1000<span>/month</span></div>
+                        <ul class="plan-features">
+                            <li>Pro Gyms Access</li>
+                            <li>Smart Workout Plan</li>
+                            <li>Home Workout Plan</li>
+                            <li>All Equipment</li>
+                            <li>Group Classes</li>
+                            <li>Priority Support</li>
+                        </ul>
+                        <a href="#" class="plan-btn">Join Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="plan-card">
+                        <h3 class="plan-name mb-1">Premium</h3>
+                        <div class="plan-price mb-1">₹1500<span>/month</span></div>
+                        <ul class="plan-features">
+                            <li>Elite Gyms & Classes</li>
+                            <li>Pro Gyms Access</li>
+                            <li>Smart Workout Plan</li>
+                            <li>Home Workout Plan</li>
+                            <li>Personal Training</li>
+                            <li>Nutrition Plan</li>
+                            <li>24/7 Support</li>
+                            <li>Spa Access</li>
+                        </ul>
+                        <a href="#" class="plan-btn">Join Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----Review Section Code-->
+    <section class="review-section" id="review">
+        <div class="shape-decoration shape-1"></div>
+        <div class="shape-decoration shape-2"></div>
+        <div class="container">
+            <h2 class="section-heading mb-4">Client <span>Reviews</span></h2>
+            <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4">
+                                <div class="review-card">
+                                    <img src="Assests/Vidyut.jpg" alt="Vidyut Jammwal" class="client-img">
+                                    <h3 class="client-name">Vidyut Jammwal</h3>
+                                    <div class="rating mb-1">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="review-text">"Your body is your temple—train it with respect, fuel it with discipline, and strengthen it with perseverance. CureFit provides the perfect environment for this transformation."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4">
+                                <div class="review-card">
+                                    <img src="Assests/hritik_rosan.jpg" alt="Hritik Roshan" class="client-img">
+                                    <h3 class="client-name">Hritik Roshan</h3>
+                                    <div class="rating mb-1">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="review-text">"Fitness is not about being better than someone else; it's about being better than you used to be. CureFit's trainers helped me push my limits safely and effectively."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4">
+                                <div class="review-card">
+                                    <img src="Assests/john.webp" alt="John Abraham" class="client-img">
+                                    <h3 class="client-name">John Abraham</h3>
+                                     <div class="rating mb-1">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="review-text">"Fitness is a lifelong commitment. Train hard, eat right, stay consistent, and respect your body. CureFit makes this journey enjoyable with their world-class facilities."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!--- Contact Section ---->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-heading">Contact <span>Us</span></h2>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="contact-card">
+                        <h3 class="contact-title">Contact Information</h3>
+                        <ul class="contact-list">
+                            <li>
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <a href="https://maps.google.com?q=Village Post Banail,Pahasu, Distt Bulandshahr, Uttar Pradesh" target="_blank" rel="noopener">Village Post Banail, Pahasu<br>
+                                    Distt Bulandshahr, Uttar Pradesh</a>
+                            </li>
+                            <li>
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <a href="tel:+916397165784">+91 6397165784</a>
+                            </li>
+                            <li>
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <a href="mailto:tusharraghav69@gmail.com">tusharraghav69@gmail.com</a>
+                            </li>
+                        </ul>
+
+                        <div class="mt-5">
+                            <h3 class="contact-title">Opening Hours</h3>
+                            <ul class="contact-list">
+                                <li>
+                                    <div class="contact-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <span>Monday - Friday: 5:00 AM - 11:00 PM</span>
+                                </li>
+                                <li>
+                                    <div class="contact-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <span>Saturday - Sunday: 7:00 AM - 9:00 PM</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="contact-card">
+                        <h3 class="contact-title">Send Us a Message</h3>
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Subject">
+                                <textarea class="form-control" placeholder="Your Message" required></textarea>
+                                <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- <div class="map-container mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.876234126575!2d77.8288643150836!3d28.70472298238393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c8b3a3a3a3a3a%3A0x3a3a3a3a3a3a3a3!2sBanail%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" allowfullscreen="" title="Map showing Banail, Uttar Pradesh"></iframe>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- Footer Section ----->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about">
+                        <a href="#" class="footer-logo">Cure<span>Fit</span></a>
+                        <p>Transform your body and mind at CureFit Gym. We're dedicated to helping you achieve your fitness goals with state-of-the-art facilities, expert trainers, and a supportive community.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Services</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Plans</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Trainers</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h4 class="footer-title">Contact Info</h4>
+                        <ul class="footer-contact-info">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Village Post Banail, Pahasu<br>
+                                Distt Bulandshahr, Uttar Pradesh
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:+916397165784">+91 6397165784</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:tusharraghav69@gmail.com">tusharraghav69@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-newsletter">
+                        <h4 class="footer-title">Newsletter</h4>
+                        <p>Subscribe to our newsletter for fitness tips, special offers, and gym updates.</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your Email" required>
+                            <button type="submit" class="newsletter-btn" title="Subscribe to Newsletter"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                        <p><small>We'll never share your email with anyone else.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">&copy; 2023 <a href="#">CureFit Gym</a>. All Rights Reserved. Designed with <i class="fas fa-heart heart-icon"></i> by Tushar </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JS -->
+    <link rel="scriptjs" href="script.js">
+</body>
+</html>
