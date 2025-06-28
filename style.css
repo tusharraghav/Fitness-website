@@ -12,6 +12,24 @@ body {
     color: var(--dark);
 }
 
+/* Add this to your stylesheet to stabilize elements */
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+* {
+    animation: none !important; /* Temporarily disable all animations */
+    transition: none !important; /* Temporarily disable transitions */
+}
+
+section {
+    padding: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
 /* Navigation Styling */
 .navbar {
     transition: all 0.3s ease;
